@@ -159,6 +159,10 @@ REST_FRAMEWORK = {
     ]
 }
 
+REST_KNOX = {
+  'USER_SERIALIZER': 'knox.serializers.UserSerializer',
+}
+
 # Activate Django-Heroku.
 django_heroku.settings(locals())
 
